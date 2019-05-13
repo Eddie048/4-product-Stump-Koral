@@ -18,11 +18,11 @@
             .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
         </style>
     </head>
-<!-- test change -->
+    <!-- test change -->
 
     <body>
 
-               <!-- Links (sit on top) 
+        <!-- Links (sit on top) 
 <div class="w3-top">
 <div class="w3-row w3-large w3-theme-d2">
 <div class="w3-col s3">
@@ -73,29 +73,43 @@
 
         <!-- Content -->
         <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
-            
-            
-                      <!-- Trigger/Open The Modal -->
-<button class="modal-button" id="myBtn">Open Modal</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal" style="background-color: aqua">
 
-            <!-- Modal content -->
-<div class="modal-content">
-  <div class="modal-header">
-    <span class="close">&times;</span>
-    <h2>Baby Monitors</h2>
-  </div>
-  <div class="modal-body">
-    <p>Baby monitors are a way to keep your baby safe even when you can't be in the same room, or even just need a break. You can put your monitor next to your baby, and a live video will be broadcasted to you directly. Many monitors also come with night vision and temperature monitoring for fevers and sleeping at night with the lights off.</p>
-  </div>
-  <div class="modal-footer">
-  </div>
-</div>
 
-    </div>
-            
+
+            <!-- Trigger/Open the Modal -->
+            <button onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-button">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom">
+
+
+                    <header class="w3-container w3-teal"> 
+                        <span onclick="document.getElementById('id01').style.display='none'" 
+                              class="w3-button w3-display-topright">&times;</span>
+                        <h2>Modal Header</h2>
+                    </header>
+
+
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('id01').style.display='none'" 
+                              class="w3-button w3-display-topright">&times;</span>
+                        <p>Some text in the Modal..</p>
+                        <p>Some text in the Modal..</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
             <div class="w3-panel">
                 <h1><b>Baby Monitors</b></h1>
                 <p>Project by Michael and Eddie</p>
@@ -190,7 +204,7 @@
                         <li class="w3-padding-16">Night Vision + Temp</li>
                         <li class="w3-padding-16">
                             <h2 class="w3-wide">$34.29</h2>
-                            
+
                         </li>
                         <li class="w3-light-grey w3-padding-24">
                             <button class="w3-button w3-green w3-padding-large"><a href="https://www.aliexpress.com/item/VB601-2-4G-Wireless-Baby-Video-Monitor-with-Night-Vision-Two-way-Talk-LCD-Display-Temperature/32700123443.html?spm=2114.search0104.3.35.1c5b6132ugSva4&ws_ab_test=searchweb0_0,searchweb201602_4_10152_10065_10151_10344_10068_" target="_blank">Shop</a></button>
@@ -300,7 +314,7 @@
             </div>
             <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
         </footer>
-                <script src="js/modal.js"></script>
-            <script src="js/slideshow.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/slideshow.js"></script>
     </body>
 </html>
